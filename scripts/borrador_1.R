@@ -42,3 +42,9 @@ proteina_vegetal <- ensanut_100k %>%
                                 "cacahuates_habas"))
 
 
+leche <- ensanut_100k %>%
+  filter(numero_alimento %in% c("otra_leche_a", "otra_leche_b", "otra_leche_c",
+                                "yogur_bajo_grasa", "yogur_beber",
+                                "yogur_beber_bajo_grasa", "yogur_beber_fruta",
+                                "yogur_frutas", "yogur_natural", "danonino", "yakult",
+                                "leche_materna"))

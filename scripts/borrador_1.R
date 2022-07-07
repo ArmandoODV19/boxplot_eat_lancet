@@ -20,3 +20,5 @@ vegetales <- ensanut_100k %>%
                                 "nopales", "pepino", "chile_seco", "zanahoria",
                                 "chile_poblano", "jicama", "limon"))
 
+verduras_almidon <- ensanut_100k %>%
+  filter(numero_alimento %in% c("papas_a", "papas_b"))

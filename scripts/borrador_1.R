@@ -22,3 +22,10 @@ vegetales <- ensanut_100k %>%
 
 verduras_almidon <- ensanut_100k %>%
   filter(numero_alimento %in% c("papas_a", "papas_b"))
+
+cereales_integrales <- ensanut_100k %>%
+  filter(numero_alimento %in% c("arroz", "pan_blanco", "pan_integral",
+                                "pan_dulce", "donas_churros", "galletas_saladas",
+                                "cereal_caja_basico", "cereal_caja_chocolate",
+                                "cereal_caja_endulzado", "cereal_caja_especialidades",
+                                "cereal_caja_fibra", "cereal_caja_multiingredientes"))

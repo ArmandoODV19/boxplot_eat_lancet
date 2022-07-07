@@ -35,3 +35,10 @@ frutas <- ensanut_100k %>%
                                 "manzana_pera", "melon_sandia", "naranja_mandarina",
                                 "papaya", "piña", "platano", "toronja", "uvas",
                                 "frutas_cristalizadas_secas"))
+
+proteina_vegetal <- ensanut_100k %>%
+  filter(numero_alimento %in% c("frijoles_olla", "frijoles_refritos", "frijoles_olla_lata",
+                                "frijoles_refritos_lata", "lenteja_garbazo_alubia",
+                                "cacahuates_habas"))
+
+

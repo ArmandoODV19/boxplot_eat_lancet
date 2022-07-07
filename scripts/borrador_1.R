@@ -12,3 +12,11 @@ carnes <- ensanut_100k %>%
                                 "pollo_b", "pollo_c", "atun_sardina",
                                 "queso_panela_fresco_cottage", "queso_maduro"))
 
+
+vegetales <- ensanut_100k %>%
+  filter(numero_alimento %in% c("brocoli_coliflor", "calabacita", "cebolla",
+                                "chayote", "col", "verduras_congeladas",
+                                "hojas_verdes", "ejotes", "jitomate", "lechuga",
+                                "nopales", "pepino", "chile_seco", "zanahoria",
+                                "chile_poblano", "jicama", "limon"))
+

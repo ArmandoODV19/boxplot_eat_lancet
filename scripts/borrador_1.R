@@ -29,3 +29,9 @@ cereales_integrales <- ensanut_100k %>%
                                 "cereal_caja_basico", "cereal_caja_chocolate",
                                 "cereal_caja_endulzado", "cereal_caja_especialidades",
                                 "cereal_caja_fibra", "cereal_caja_multiingredientes"))
+
+frutas <- ensanut_100k %>%
+  filter(numero_alimento %in% c("durazno_melocoton", "fresa", "guayaba", "mango",
+                                "manzana_pera", "melon_sandia", "naranja_mandarina",
+                                "papaya", "piña", "platano", "toronja", "uvas",
+                                "frutas_cristalizadas_secas"))

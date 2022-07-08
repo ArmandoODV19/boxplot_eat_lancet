@@ -90,3 +90,45 @@ eat_general_plot <- function(x, grupo){
 }
 
 eat_general_plot(cereales_integrales, grupo = "cereales_integrales")
+
+
+
+### consumo de alimentos por zona (norte, sur, centro, cdmx) ###
+
+eat_zone_plot <- function(x, grupo, zone){
+
+  temp1 <-  x %>%
+    filter(region_nutricion == zone) %>%
+    select(numero_alimento, dias_comio) %>%
+    group_by(numero_alimento, dias_comio) %>%
+    summarise(n = n()) %>%
+    mutate(freq = n / sum(n)) %>%
+    filter(dias_comio != 0)
+
+  temp2 <- ensanut_100k %>%
+    filter(region_nutricion == zone) %>%
+    filter(numero_alimento %in% as.character(levels(as.factor(x$numero_alimento)))) %>%
+    select(categoria, dias_comio) %>%
+    add_column(numero_alimento = grupo) %>%
+    group_by(numero_alimento, dias_comio) %>%
+    summarise(n = n()) %>%
+    mutate(freq = n / sum(n)) %>%
+    filter(dias_comio != 0)
+
+  datamerge <- rbind(temp2, temp1)
+
+  plot1 <- ggplot(datamerge,aes(x = numero_alimento, y = freq, fill = numero_alimento)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = dias_comio), size = 5)+
+    xlab("Alimento")+
+    ylab("Frecuencia de consumo")+
+    theme_classic()+
+    theme(axis.text.x=element_text(angle = 45, hjust = 1),
+          text = element_text(size = 20))+
+    guides(fill = FALSE)
+
+  plot1 + aes(x = fct_inorder(numero_alimento)) +
+    xlab("alimento")
+}
+
+eat_zone_plot(vegetales, grupo = "vegetales", zone = "cdmx")

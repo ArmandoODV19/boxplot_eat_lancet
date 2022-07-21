@@ -176,3 +176,36 @@ eat_all_plot()
 
 # Funcion para graficar los 7 grupos de alimentos
 # por zona norte, sur, centro y cdmx
+
+
+eat_all_zone_plot <- function(zone){
+  vegetales$grupo<-"vegetales"
+  frutas$grupo<-"frutas"
+  proteina_vegetal$grupo<-"proteina_vegetal"
+  verduras_almidon$grupo<-"verduras_almidon"
+  cereales_integrales$grupo<-"cereales_integrales"
+  leche$grupo<-"leche"
+  carnes$grupo<-"carnes"
+
+  gruposeat<-rbind(vegetales,frutas,proteina_vegetal, verduras_almidon,cereales_integrales,leche,carnes)
+
+  gruposeat%>%
+    filter(region_nutricion == zone) %>%
+    select(grupo, dias_comio) %>%
+    group_by(grupo, dias_comio) %>%
+    summarise(n = n()) %>%
+    mutate(freq = n / sum(n)) %>%
+    filter(dias_comio != 0)%>%
+    ggplot(aes(x = grupo, y = freq, fill = grupo)) +
+    geom_boxplot() +
+    geom_jitter(aes(color = dias_comio), size = 2)+
+    xlab("Alimento")+
+    ylab("Frecuencia de consumo") +
+    labs(color='Consumo(días)', fill="grupo")+
+    guides(fill = "none")+
+    theme_classic()+
+    theme(axis.text.x=element_text(angle = 45, hjust = 1),
+          text = element_text(size = 20), plot.title=element_text(hjust=1))
+}
+
+eat_all_zone_plot(zone = "centro")

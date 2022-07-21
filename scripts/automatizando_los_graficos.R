@@ -132,3 +132,10 @@ eat_zone_plot <- function(x, grupo, zone){
 }
 
 eat_zone_plot(vegetales, grupo = "vegetales", zone = "cdmx")
+
+
+#################################################
+###AGREGANDO FUNCIONES###########################
+#################################################
+
+

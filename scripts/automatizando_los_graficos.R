@@ -169,5 +169,10 @@ eat_all_plot <- function(){
           text = element_text(size = 20), plot.title=element_text(hjust=1))
 }
 
+# esta funcion no necesita argumentos
 eat_all_plot()
-.
+
+###
+
+# Funcion para graficar los 7 grupos de alimentos
+# por zona norte, sur, centro y cdmx

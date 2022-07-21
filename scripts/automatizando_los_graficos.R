@@ -208,4 +208,6 @@ eat_all_zone_plot <- function(zone){
           text = element_text(size = 20), plot.title=element_text(hjust=1))
 }
 
+# el argumento zone se refiere a la
+# zona del pais (centro, sur, norte, cdmx)
 eat_all_zone_plot(zone = "centro")

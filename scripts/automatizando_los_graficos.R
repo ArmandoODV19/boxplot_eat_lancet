@@ -163,10 +163,11 @@ eat_all_plot <- function(){
     xlab("Alimento")+
     ylab("Frecuencia de consumo") +
     labs(color='Consumo(días)', fill="grupo")+
-    guides(fill = FALSE)+
+    guides(fill = "none")+
     theme_classic()+
     theme(axis.text.x=element_text(angle = 45, hjust = 1),
           text = element_text(size = 20), plot.title=element_text(hjust=1))
 }
 
 eat_all_plot()
+.

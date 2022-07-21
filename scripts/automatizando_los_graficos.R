@@ -161,10 +161,12 @@ eat_all_plot <- function(){
     geom_boxplot() +
     geom_jitter(aes(color = dias_comio), size = 2)+
     xlab("Alimento")+
-    ylab("Frecuencia de consumo")+ggtitle ("100K")+
+    ylab("Frecuencia de consumo") +
     labs(color='Consumo(días)', fill="grupo")+
+    guides(fill = FALSE)+
     theme_classic()+
     theme(axis.text.x=element_text(angle = 45, hjust = 1),
           text = element_text(size = 20), plot.title=element_text(hjust=1))
 }
 
+eat_all_plot()

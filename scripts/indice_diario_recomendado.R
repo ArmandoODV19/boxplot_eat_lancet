@@ -34,7 +34,7 @@ leche %>%
   summarise(total = sum(nat)) %>%
   pull(total)/13532
 
-# cereales integrale
+# cereales integrales
 
 cereales_integrales %>%
   filter(tamano_porcion == "E") %>%

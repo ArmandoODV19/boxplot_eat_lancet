@@ -1,4 +1,4 @@
-# frutas
+#
 
 frutas %>%
   filter(tamano_porcion == "E") %>%
@@ -42,3 +42,12 @@ cereales_integrales %>%
   mutate(nat = numero_porciones*100) %>%
   summarise(total = sum(nat)) %>%
   pull(total)/21629
+
+# frutas
+
+frutas %>%
+  filter(tamano_porcion == "E") %>%
+  select(veces_al_dia, numero_porciones) %>%
+  mutate(nat = numero_porciones*100) %>%
+  summarise(total = sum(nat)) %>%
+  pull(total)/17318

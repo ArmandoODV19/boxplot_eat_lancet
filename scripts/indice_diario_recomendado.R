@@ -1,11 +1,11 @@
-#
+# carnes
 
-frutas %>%
+carnes %>%
   filter(tamano_porcion == "E") %>%
   select(veces_al_dia, numero_porciones) %>%
   mutate(nat = numero_porciones*100) %>%
   summarise(total = sum(nat)) %>%
-  pull(total)/17318
+  pull(total)/17019
 
 # verduras
 

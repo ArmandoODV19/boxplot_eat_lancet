@@ -51,3 +51,12 @@ frutas %>%
   mutate(nat = numero_porciones*100) %>%
   summarise(total = sum(nat)) %>%
   pull(total)/17318
+
+# proteina vegetal
+
+proteina_vegetal %>%
+  filter(tamano_porcion == "E") %>%
+  select(veces_al_dia, numero_porciones) %>%
+  mutate(nat = numero_porciones*100) %>%
+  summarise(total = sum(nat)) %>%
+  pull(total)/17804

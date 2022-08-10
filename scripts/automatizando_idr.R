@@ -1,5 +1,8 @@
 ### Automatizando idr
 
+# la siguiente función genera un df con el idr de ensanut
+# y el consumo en gr de los 7 grupos de alimentos
+
 idr_ensanut <- function(){
   carnes_vec <- carnes %>%
     filter(tamano_porcion == "E") %>%

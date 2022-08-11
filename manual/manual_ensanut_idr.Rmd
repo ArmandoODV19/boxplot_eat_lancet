@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introducción
 
-El siguiente manual tiene como objetivo explicar el uso de funciones en R studio y Tableau para generar tablas y gráficos que permitan comparar el índice diario recomendado (idr) en México con el consumo promedio reportado a partir de los datos de ENSANUT 100k 2018 e EAT-Lancet. La información se divide en dos apartados, el primero explicando las funciones de R y el segundo describe como utilizar la información obtenida y desarrollar el gráfico en Tableau
+El siguiente manual tiene como objetivo explicar el uso de funciones en R studio y Tableau para generar tablas y gráficos que permitan comparar el índice diario recomendado (idr) en México con el consumo promedio reportado a partir de los datos de ENSANUT 100k 2018 e EAT-Lancet. La información se divide en dos apartados, el primero explicando las funciones de R y el segundo describe como utilizar la información obtenida y desarrollar el gráfico en Tableau.
 
 ![](idr_ensanut.png)
 

@@ -135,3 +135,10 @@ END
 * [TC_Value]
 ```
 
+
+**TC_alimento Rank**
+
+```{r tc_alimento, eval=FALSE}
+RANK_UNIQUE([TC_Value])
+```
+

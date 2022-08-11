@@ -1,0 +1,11 @@
+---
+title: "Manual de usuario"
+author: "Armando Ocampo"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+El siguiente manual tiene como objetivo el 

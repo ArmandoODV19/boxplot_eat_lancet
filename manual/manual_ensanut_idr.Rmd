@@ -71,3 +71,6 @@ Path
 Este argumento debe generar un error. Por lo cual debemos agregar un apartado de unión entre nuestros datos. Esto se realiza conla función *Add new join clause* igualando a 1 en ambos data sets.
 
 << 1 = 1 >>
+
+
+A continuación, nos dirigimos a Sheet 1 para comenzar a generar las fórmulas para manipular los datos y generar el gráfico.

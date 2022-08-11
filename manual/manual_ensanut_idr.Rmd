@@ -74,3 +74,15 @@ Este argumento debe generar un error. Por lo cual debemos agregar un apartado de
 
 
 A continuación, nos dirigimos a Sheet 1 para comenzar a generar las fórmulas para manipular los datos y generar el gráfico.
+
+
+*Calcular campo de distancia*
+
+### Distance
+
+Analysis >> Created Calculated Field
+
+Name as **Distance**
+Data type to **Integer**
+Current value to **10**
+OK

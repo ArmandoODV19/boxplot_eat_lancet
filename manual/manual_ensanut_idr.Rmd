@@ -53,3 +53,4 @@ Ambas tienen el argumento *zone*, el cual permite filtrar los datos para cada zo
 # idr_eat_norte
 ```
 
+Con estas funciones se obtine la información de trabajo. Guarda el resultado de cada una con la función *write.csv()*. Esto te permitirá terminar la evaluación de la infromación.

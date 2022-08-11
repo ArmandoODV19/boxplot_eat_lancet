@@ -54,3 +54,7 @@ Ambas tienen el argumento *zone*, el cual permite filtrar los datos para cada zo
 ```
 
 Con estas funciones se obtine la información de trabajo. Guarda el resultado de cada una con la función *write.csv()*. Esto te permitirá terminar la evaluación de la infromación.
+
+## Tableau
+
+Para este apartado es necesario hacer un usuario y descargar la aplicación de ***[Tableau Public](https://public.tableau.com/en-us/s/)*** en tu computadora de trabajo.

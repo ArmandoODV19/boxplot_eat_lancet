@@ -31,5 +31,16 @@ Ambas funciones se utilizan de forma directa, sin argumentos. Generando como sal
 # idr_ensanut_table <- idr_ensanut()
 # idr_ensanut_table
 
+# idr_eat_table <- idr_eat_lancet()
+# idr_eat_table
 ```
+
+De la misma manera, se puede filtrar el consumo promedio de los siete grupos de alimentos por zona (centro, sur, norte, cdmx) y compararlo con el idr de ENSANUT e EAT-Lancet. Para esto se utilizan las siguientes funciones:
+
+```{r idr2, eval=FALSE}
+idr_ensanut_zone()
+idr_eat_lancet_zone()
+```
+
+Ambas tienen el argumento *zone*, el cual permite filtrar los datos para cada zona.
 

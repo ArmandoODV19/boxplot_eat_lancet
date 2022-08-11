@@ -142,3 +142,10 @@ END
 RANK_UNIQUE([TC_Value])
 ```
 
+
+**X**
+
+```{r x, eval=FALSE}
+[Index]+([TC_alimento Rank]*[Distance])
+```
+

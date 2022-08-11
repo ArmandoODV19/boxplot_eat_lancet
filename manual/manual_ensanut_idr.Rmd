@@ -154,3 +154,7 @@ Analysis >> Created Calculated Field
 [Index]+([TC_alimento Rank]*[Distance])
 ```
 
+
+### A graficar
+
+

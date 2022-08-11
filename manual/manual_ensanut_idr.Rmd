@@ -173,3 +173,10 @@ click derecho >> Edit Table Calculations >> Nest Calculations >> select TC_alime
 
 
 Llevar **Y** a **rows**
+click derecho >> Compute Using >> Path(bin)
+
+
+Llevar **Grupo** a **Columns**
+
+
+Click derecho **Distance** >> Cambiar valor a 0

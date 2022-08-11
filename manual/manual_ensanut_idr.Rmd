@@ -102,3 +102,13 @@ New Field name to Path(bin)
 Size of bins to 1
 
 OK
+
+
+**Index**
+
+Analysis >> Created Calculated Field
+
+```{r ind, eval=FALSE}
+-6+((INDEX()-1)*0.12)
+```
+

@@ -89,3 +89,16 @@ Data type to **Integer**
 Current value to **10**
 
 OK
+
+
+
+
+**Crear Path(bin)**
+
+Click derecho en Path >> Create >> Bins
+
+New Field name to Path(bin)
+
+Size of bins to 1
+
+OK

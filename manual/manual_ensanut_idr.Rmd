@@ -112,3 +112,13 @@ Analysis >> Created Calculated Field
 -6+((INDEX()-1)*0.12)
 ```
 
+
+
+**TC_Value**
+
+Analysis >> Created Calculated Field
+
+```{r tc, eval=FALSE}
+WINDOW_MAX(MAX([freq]))
+```
+

@@ -428,3 +428,5 @@ idr_eat_lancet_zone <- function(zone){
 
   return(df)
 }
+
+idr_eat_lancet_zone(zone = "norte")

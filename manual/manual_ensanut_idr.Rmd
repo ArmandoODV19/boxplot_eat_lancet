@@ -83,6 +83,9 @@ A continuación, nos dirigimos a Sheet 1 para comenzar a generar las fórmulas p
 Analysis >> Created Calculated Field
 
 Name as **Distance**
+
 Data type to **Integer**
+
 Current value to **10**
+
 OK

@@ -23,13 +23,13 @@ idr_ensanut()
 idr_eat_lancet()
 ```
 
-Ambas funciones se utilizan de forma directa, sin argumentos. Generando como salida una tabla conformada por los 7 grupos de alimentos, el idr, 
+Ambas funciones se utilizan de forma directa, sin argumentos. Generando como salida una tabla conformada por los 7 grupos de alimentos, el idr, el consumo promedio en poblacion mexicana y el grupo de alimento al que pertenecen. A continuación se muestra una serie de comandos para visualizar los datos de salida que genera cada función
 
 
-```{r tabla, eval=TRUE}
-library(knitr)
+```{r tabla, echo=TRUE}
 # correr los siguientes argumentos para ver ejemplo
 # idr_ensanut_table <- idr_ensanut()
 # idr_ensanut_table
+
 ```
 

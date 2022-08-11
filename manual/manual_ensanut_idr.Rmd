@@ -24,3 +24,12 @@ idr_eat_lancet()
 ```
 
 Ambas funciones se utilizan de forma directa, sin argumentos. Generando como salida una tabla conformada por los 7 grupos de alimentos, el idr, 
+
+
+```{r tabla, eval=TRUE}
+library(knitr)
+# correr los siguientes argumentos para ver ejemplo
+# idr_ensanut_table <- idr_ensanut()
+# idr_ensanut_table
+```
+

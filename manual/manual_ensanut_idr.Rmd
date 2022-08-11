@@ -158,3 +158,18 @@ Analysis >> Created Calculated Field
 ### A graficar
 
 
+Cambiar **Mark Type** a **polygon**
+
+
+Colocar **Path(bin)** en columns >> click derecho, permitir missing values >> llevar **Path(bin)** a path mark
+
+
+Llevar **alimento** a colour Mark
+
+
+Llevar **X** a columns >> click derecho >> Compute Using >> Path(bin)
+
+click derecho >> Edit Table Calculations >> Nest Calculations >> select TC_alimento Rank >> Specific Dimensions -- solo **alimentos**
+
+
+Llevar **Y** a **rows**

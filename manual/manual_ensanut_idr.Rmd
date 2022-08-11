@@ -60,7 +60,7 @@ Con estas funciones se obtine la información de trabajo. Guarda el resultado de
 Para este apartado es necesario hacer un usuario y descargar la aplicación de ***[Tableau Public](https://public.tableau.com/en-us/s/)*** en tu computadora de trabajo.
 
 
-Una vez realizada la actualización abrir Tableau y cargara archivo *.csv* . En el editor de datos pegar el siguiente comando, esto nos ayudará a crear los bins para el gráfico.
+Una vez realizada la instalación abrir Tableau y cargara archivo *.csv* . En el editor de datos pegar el siguiente comando, esto nos ayudará a crear los bins para el gráfico.
 
 ```{r ta1, eval=FALSE}
 Path

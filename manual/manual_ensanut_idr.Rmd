@@ -126,6 +126,8 @@ WINDOW_MAX(MAX([freq]))
 
 **Y**
 
+Analysis >> Created Calculated Field
+
 ```{r Y, eval=FALSE}
 IF [Index] <= 6 THEN
     (1/(1+EXP(-[Index])))
@@ -138,12 +140,16 @@ END
 
 **TC_alimento Rank**
 
+Analysis >> Created Calculated Field
+
 ```{r tc_alimento, eval=FALSE}
 RANK_UNIQUE([TC_Value])
 ```
 
 
 **X**
+
+Analysis >> Created Calculated Field
 
 ```{r x, eval=FALSE}
 [Index]+([TC_alimento Rank]*[Distance])

@@ -44,3 +44,12 @@ idr_eat_lancet_zone()
 
 Ambas tienen el argumento *zone*, el cual permite filtrar los datos para cada zona.
 
+```{r ejem2, eval=FALSE}
+# correr los siguientes ejemplos
+# idr_ensanut_norte <- idr_ensanut_zone(zone = "norte")
+# idr_ensanut_norte
+
+# idr_eat_norte <- idr_eat_lancet_zone(zone = "norte")
+# idr_eat_norte
+```
+

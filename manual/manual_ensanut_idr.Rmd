@@ -122,3 +122,16 @@ Analysis >> Created Calculated Field
 WINDOW_MAX(MAX([freq]))
 ```
 
+
+
+**Y**
+
+```{r Y, eval=FALSE}
+IF [Index] <= 6 THEN
+    (1/(1+EXP(-[Index])))
+ELSE
+    (1/(1+EXP(-(12-[Index]))))
+END
+* [TC_Value]
+```
+
